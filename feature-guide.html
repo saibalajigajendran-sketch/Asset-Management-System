@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Feature guide for the Asset Management application.">
+<title>Asset Management | Feature Guide</title>
+<style>
+:root{color-scheme:light;--ink:#172b4d;--muted:#52647b;--blue:#1457a6;--teal:#087e8b;--line:#dbe4ee;--wash:#f3f7fb;--white:#fff;--shadow:0 14px 38px #15385b12}*{box-sizing:border-box}body{margin:0;background:var(--wash);color:var(--ink);font:16px/1.6 "Segoe UI",Arial,sans-serif}.hero{padding:62px max(24px,calc((100% - 1080px)/2));background:linear-gradient(125deg,#102c50,#1457a6 64%,#087e8b);color:white}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;font-weight:700;opacity:.8}.hero h1{font-size:clamp(2.1rem,5vw,3.4rem);line-height:1.12;margin:.55rem 0 1rem}.hero p{max-width:720px;font-size:1.1rem;color:#e5effb;margin:0}.wrap{max-width:1080px;margin:0 auto;padding:34px 24px 64px}.intro{background:white;border:1px solid var(--line);border-radius:16px;padding:24px 28px;box-shadow:var(--shadow);margin-top:-8px}.intro h2,.section-title{margin:0 0 8px;font-size:1.45rem}.intro p{margin:0;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:22px 0 38px}.card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:21px 22px;box-shadow:var(--shadow)}.card .num{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#e8f2fc;color:var(--blue);font-weight:700}.card h3{margin:12px 0 6px;font-size:1.08rem}.card p{margin:0;color:var(--muted)}.section-title{margin-top:36px}.categories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:16px 0 36px}.category{padding:13px 15px;background:white;border:1px solid var(--line);border-radius:10px;font-weight:600}.category small{display:block;color:var(--muted);font-weight:400;margin-top:3px}.note{border-left:4px solid var(--teal);background:#e8f7f7;padding:15px 18px;border-radius:0 10px 10px 0;color:#214c58;margin-top:14px}.steps{padding-left:22px;color:var(--muted)}.steps li{padding:4px 0}footer{border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:.9rem}@media(max-width:720px){.hero{padding:44px 24px}.grid{grid-template-columns:1fr}.categories{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:430px){.categories{grid-template-columns:1fr}.wrap{padding-inline:16px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="eyebrow">Application overview</div><h1>Asset Management</h1><p>A central workspace for browsing and maintaining organizational asset registers, with records connected to SharePoint.</p></header>
+<main class="wrap">
+<section class="intro"><h2>What the application includes</h2><p>Use the register navigation to move between asset types, find records, review their details, and manage records in the connected SharePoint lists. The available fields vary by register so each asset type can show relevant information.</p></section>
+<h2 class="section-title">Key features</h2>
+<section class="grid" aria-label="Application features">
+<article class="card"><span class="num">01</span><h3>Multiple asset registers</h3><p>Browse 12 focused registers covering hardware, services, software, cloud resources, tracking, and intellectual property.</p></article>
+<article class="card"><span class="num">02</span><h3>Search and status filtering</h3><p>Find a register by name, or search its assets by name, ID, or assignee. Filter records by available status values and reset filters when needed.</p></article>
+<article class="card"><span class="num">03</span><h3>Asset summaries and details</h3><p>See a register’s total asset count and category-specific columns. Open a record to review its details and available service history.</p></article>
+<article class="card"><span class="num">04</span><h3>Create and edit records</h3><p>Add assets or update existing ones using fields provided by the selected SharePoint list. Field controls support choices, dates, numbers, and people where configured.</p></article>
+<article class="card"><span class="num">05</span><h3>Delete with confirmation</h3><p>Remove a record from its connected SharePoint list after reviewing a confirmation prompt.</p></article>
+<article class="card"><span class="num">06</span><h3>CSV export</h3><p>Export the currently selected register’s asset records to a CSV file for offline review or reporting.</p></article>
+<article class="card"><span class="num">07</span><h3>Microsoft 365 people lookup</h3><p>People fields can search the organization directory by employee name or email, helping select assignees and owners.</p></article>
+<article class="card"><span class="num">08</span><h3>Status and lifecycle visibility</h3><p>Display asset status, including active, in maintenance, in stock, allocated, and retired states when present in the records.</p></article>
+<article class="card"><span class="num">09</span><h3>Paging and responsive layout</h3><p>Move through large result sets with pagination. The interface adapts for narrower screens and includes accessible labels for controls and dialogs.</p></article>
+</section>
+<h2 class="section-title">Available registers</h2>
+<section class="categories" aria-label="Asset register categories">
+<div class="category">Hardware — Laptops &amp; Desktops<small>Devices, assignments, support details</small></div><div class="category">Network Devices<small>Network equipment and firmware</small></div><div class="category">Asset Tracker<small>Ownership, tags, and movement</small></div><div class="category">Outsourced Services<small>Vendors and contract details</small></div><div class="category">Software<small>Licenses, quantities, and expiry</small></div><div class="category">Hardware — Server<small>Server specifications and service details</small></div><div class="category">Cloud Providers<small>Services, plans, and ownership</small></div><div class="category">Hardware — Accessories<small>Peripherals and inventory counts</small></div><div class="category">Intellectual Property<small>Registrations and renewal dates</small></div><div class="category">Media Devices<small>Meeting room and presentation equipment</small></div><div class="category">Mobile Devices<small>Phones, tablets, and carrier details</small></div><div class="category">Client Accessories<small>Client access equipment and levels</small></div>
+</section>
+<h2 class="section-title">Typical workflow</h2><ol class="steps"><li>Choose a register from the left navigation or search for it.</li><li>Search or filter the list to find the asset you need.</li><li>Open the record to review its details, or choose Add asset or Edit asset to maintain it.</li><li>Export the selected register to CSV when you need a local copy.</li></ol>
+<div class="note"><strong>Data note:</strong> The application reads and writes asset records through configured SharePoint lists. The source code also contains sample records for demonstration, but the live register contents depend on the connected SharePoint environment and permissions.</div>
+<footer><p>Asset Management application feature guide</p></footer>
+</main>
+</body>
+</html>

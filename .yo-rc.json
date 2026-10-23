@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.18.2",
+    "sdksVersions": {},
+    "version": "1.23.2",
+    "libraryName": "asset-management",
+    "libraryId": "1ff789c9-22c0-4d9c-96e7-93dca8a0b695",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "AssetManagement",
+    "solutionShortDescription": "AssetManagement description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
